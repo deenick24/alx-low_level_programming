@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- *main- serves as the entry point for the program
+ *main-serves as the entry point for the program
  *
- *Return: by default returns zero if no errors otherwise returns non-zero value.
+ *Return: by default returns zero if no errors otherwise returns non-zero value
  */
 int main(void)
 {
