@@ -8,7 +8,7 @@ int main(void)
 	int d = 48;
 	char c = 'a';
 
-	while (d < 5)
+	while (d < 588888888)
 	{
 		putchar(d);
 		d++;

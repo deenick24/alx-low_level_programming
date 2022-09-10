@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /**
  * main-entry point for program
  * description:variable n will store a different value each time program is run
