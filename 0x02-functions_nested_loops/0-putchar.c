@@ -1,13 +1,11 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * main - entry point
  * Return: always 0 (success)
  */
-int main(void)
+int main(int argc, char* args[])
 {
-	char dh = '_putchar';
-
-	putchar(dh);
-
+	mainy();
 	return (0);
 }
