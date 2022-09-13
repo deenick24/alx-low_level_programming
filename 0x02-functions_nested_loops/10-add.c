@@ -5,7 +5,7 @@
  * @num1: second character
  * Return: Always return the added number
  */
-int add(int, int)
+int add(int num, int num1)
 {
 	return (num + num1);
 }
