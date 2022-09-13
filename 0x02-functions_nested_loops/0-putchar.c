@@ -4,7 +4,7 @@
  * main - entry point
  * Return: always 0 (success)
  */
-int main(int argc, char* args[])
+int main(void)
 {
 	mainy();
 	return (0);
