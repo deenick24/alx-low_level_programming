@@ -2,7 +2,7 @@
 /**
  * print_times_table - n times table
  * @n: number to be used
- * Return: returns void
+ * Return: returns 0
  */
 void print_times_table(int n)
 {
@@ -20,7 +20,7 @@ void print_times_table(int n)
 				if (prod <= n)
 					_putchar(' ');
 				else
-					_putchar((prod / 10) + '0')
+					_putchar((prod / 10) + '0');
 					_putchar((prod % 10) + '0');
 			}
 			_putchar('\n');
