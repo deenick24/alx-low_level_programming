@@ -2,29 +2,46 @@
 /**
  * print_times_table - n times table
  * @n: number to be used
- * Return: returns 0
+ * Return: returns void
  */
 void print_times_table(int n)
 {
-		int i, j, prod;
+	int a = 0, rep, b;
 
-		for (i = 0; i <= n; i++)
+	if (n < 0 || n > 15)
+		return;
+	while (a <= n)
+	{
+		for (b = 0; b <= n; b++)
 		{
-			_putchar('0');
-			for (j = 1; j <= n; j++)
+			rep = a * b;
+			if (b == 0)
+				_putchar('0' + rep);
+			else if (rep < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + rep);
+			}
+			else if (rep < 100)
+			{
+				_putchar(' ');
+				_putchar('0' + rep / 10);
+				_putchar('0' + rep % 10);
+			}
+			else
+			{
+				_putchar('0' + rep / 100);
+				_putchar('0' + (rep - 100) / 10);
+				_putchar('0' + rep % 10);
+			}
+			if (b < n)
 			{
 				_putchar(',');
 				_putchar(' ');
-																							prod = i * j;
-
-				if (prod <= n)
-					_putchar(' ');
-				else
-					_putchar((prod / 10) + '0');
-					_putchar((prod % 10) + '0');
 			}
-			_putchar('\n');
 		}
-		if (n > 15)
-			return (0);
+		_putchar('\n');
+		a++;
+}
 }
