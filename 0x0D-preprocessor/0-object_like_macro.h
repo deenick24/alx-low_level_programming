@@ -1,2 +1,2 @@
-#ifndef  TABLESIZE SIZE
+#ifndef TABLESIZE SIZE
 #define SIZE 1024
