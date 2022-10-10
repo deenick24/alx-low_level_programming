@@ -1,12 +1,4 @@
-#include <stdio.h>
-
-/**
- * main - print the name of the file that was compiled
- * Return: int
- */
-
-int main(void)
-{
-printf("%s\n", __FILE__);
-return (0);
-}
+#ifndef ABS_DEF
+#define ABS_DEF
+#define ABS(x) (x > 0 ? (x) : (x) * -1)
+#endif
